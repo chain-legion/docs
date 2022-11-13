@@ -12,7 +12,32 @@ them to take part in the Chain Legion ecosystem, through the system of on-chain 
 with a clean slate, and it is up to its owner to build its on-chain identity, by interacting with the Chain Legion
 universe
 
+# Websites
+
+We have 2 official websites:
+
+- [chainlegion.com](https://chainlegion.com)
+    - Used for minting
+    - Contains a personal collection gallery page, where you can see all legionnaires in your wallet
+- [play.chainlegion.com](https://play.chainlegion.com)
+    - Used for interacting with the Chain Legion universe
+        - NFT overview
+        - Leveling
+        - PvP battles
+        - Etc
+    - Serves as the main user-oriented dashboard
+
+# Metadata storage
+
+We use a centralized server to store metadata JSON files, for (in)visibility purposes. NFT images are located
+on the IPFS. After mint-out, we will migrate metadata files to IPFS.
+
+You can query available metadata files by visiting
+
+`metadata.chainlegion.com/${tokenId}`
+
 # Contracts
+
 All contracts are verified on BscScan. You can view them using the links below:
 
 - [Mint](https://bscscan.com/address/0x820b46240bcfcd95ecfe31692a811a2e561598ea#code)
@@ -58,10 +83,10 @@ Battle stats are a crucial part of the PvP system. Here is how they behave in ba
 
 - **DPH** - How much base damage you deal per turn
 - **HP** - Total amount of health you have. If you take more damage than you have HP, you lose the battle
-- **SPD** - How fast you are. This will determine whether you strike first, and your chance to do a double-strike on your
-  turn
-- **DOT** - How much passive damage you inflict to your opponent. This ability stacks each turn, so the longer the battle
-  is, the bigger damage output will be
+- **SPD** - How fast you are. This will determine whether you strike first, and your chance to do a double-strike on
+  your turn
+- **DOT** - How much passive damage you inflict to your opponent. This ability stacks each turn, so the longer the
+  battle is, the bigger damage output will be
 
 Attribute builds are not final and can be reset for a fee
 
